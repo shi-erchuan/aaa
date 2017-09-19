@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>demo</title>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.1111.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+	    <div class="swiper-slide">
+	    	<img src="images/eqx_img01.jpg" alt="" class="eqx_img">
+	    	<img src="images/eqx_text01.png" alt="" class="eqx_text eqx_text01">
+	    	<img src="images/eqx_bom01.png" alt="" class="eqx_bom">
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="images/eqx_img02.jpg" alt="" class="eqx_img">
+	    	<img src="images/eqx_text02.png" alt="" class="eqx_text">
+	    	<img src="images/eqx_bom02.png" alt="" class="eqx_bom">
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="images/eqx_img03.jpg" alt="" class="eqx_img">
+	    	<img src="images/eqx_text03.png" alt="" class="eqx_text">
+	    	<img src="images/eqx_bom03.png" alt="" class="eqx_bom">
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="images/eqx_img04.jpg" alt="" class="eqx_img">
+	    	<img src="images/eqx_text04.png" alt="" class="eqx_text">
+	    	<img src="images/eqx_bom04.png" alt="" class="eqx_bom">
+	    </div>
+	    <div class="swiper-slide">
+			<img src="images/eqx05_img.png" alt="" class="eqx05_img">
+			<img src="images/eqx05_text.png" alt="" class="eqx05_text">
+			<img src="images/eqx05_ewm.png" alt="" class="eqx05_ewm">
+			<img src="images/eqx05_bom.png" alt="" class="eqx05_bom">
+	    </div>
+	</div>
+</div>
+<div class="eqx_audio rotate" id="eqx_audio" onclick="a();">
+	<audio src="http://u.res.eqxiu.76423.com/group4/M00/ED/D7/yq0KYFb83huAcPhEABAAAHSq9ik166.mp3" autoplay="autoplay" loop="loop" id="eqx_music">
+   </audio>
+</div>
+<div class="btn_bottom">
+	<a href="#"><img src="images/slideUp.png" alt=""></a>
+</div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+    });  
+   function a(){
+     var audio = document.getElementById('eqx_music'); 
+      if(audio.paused){                 
+      audio.play(); 
+      document.getElementById("eqx_audio").className="eqx_audio rotate";
+	  }else{
+	   audio.pause();
+	   document.getElementById("eqx_audio").className="eqx_audio";
+	  }
+   	}
+</script>
+</body>
+</html>
